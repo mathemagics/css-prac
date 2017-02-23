@@ -1,0 +1,42 @@
+.product-links {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000;
+  margin-left: 0px;
+
+  &__text {
+    text-align: left;
+    align-self: flex-start;
+    margin-left: 10px;
+
+    &--coords {
+      margin: 0px;
+    }
+
+    &--description {
+      margin: 0px 0px 15px 0px;
+    }
+  }
+
+  &__button {
+    margin: 10px;
+    width: 215px;
+    height: 52px;
+    text-transform: uppercase;
+
+    &--blue {
+      background-color: #003e51;
+      border: 1px solid #003e51;
+      color: #FFFFFF;
+    }
+
+    &--white {
+      background-color: #FFFFFF;
+      border: 1px solid #003e51;
+      color: #003e51;
+    }
+  }
+}

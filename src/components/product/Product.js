@@ -12,9 +12,9 @@ class Product extends Component {
   }
   render() {
     return (
-      <div>
-        <img src={image} alt="Test" />
-        <img src={image2} alt="Test2" />
+      <div className="product">
+        <img src={image} alt="Test" className="product__primary-image" />
+        <img src={image2} alt="Test2" className="product__secondary-image" />
         <ProductLinks />
       </div>
     );

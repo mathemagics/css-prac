@@ -1,0 +1,20 @@
+.product {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;;
+
+  &__primary-image {
+    width: 710px;
+    height: 410px;
+  }
+
+  &__secondary-image {
+    z-index: 1;
+    margin: auto;
+    position: absolute;
+    margin-top: 50px;
+    max-width: 144.28px;
+    max-height: 443px;
+  }
+
+}
