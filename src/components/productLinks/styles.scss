@@ -1,3 +1,27 @@
+@mixin primary-button-color($color) {
+  background-color: $color;
+  border: 1px solid $color;
+  color: #FFFFFF;
+
+  &:hover {
+    background-color: #333333;
+    border: 1px solid #333333;
+    transition: ease-in-out .2s;
+  }
+}
+
+@mixin secondary-button-color($color) {
+  background-color: #FFFFFF;
+  border: 1px solid $color;
+  color: $color;
+
+  &:hover {
+    border: 1px solid #333333;
+    color: #333333;
+    transition: ease-in-out .2s;
+  }
+}
+
 .product-links {
   display: flex;
   justify-content: center;
@@ -5,12 +29,10 @@
   align-items: center;
   text-transform: uppercase;
   color: #000;
-  margin-left: 0px;
-  margin-right: 14%;
+  flex: 1;
 
   &__text {
     text-align: left;
-    align-self: flex-start;
     margin-left: 10px;
 
     &--coords {
@@ -28,28 +50,36 @@
     height: 52px;
     text-transform: uppercase;
 
-    &--blue {
-      background-color: #003e51;
-      border: 1px solid #003e51;
-      color: #FFFFFF;
-
-      &:hover {
-        background-color: #333333;
-        border: 1px solid #333333;
-        transition: ease-in-out .2s;
-      }
+    &--primary-blue {
+      @include primary-button-color(#003e51);
     }
 
-    &--white {
-      background-color: #FFFFFF;
-      border: 1px solid #003e51;
-      color: #003e51;
+    &--secondary-blue {
+      @include secondary-button-color(#003e51);
+    }
 
-      &:hover {
-        border: 1px solid #333333;
-        color: #333333;
-        transition: ease-in-out .2s;
-      }
+    &--primary-green {
+      @include primary-button-color(#7F9B8F);
+    }
+
+    &--secondary-green {
+      @include secondary-button-color(#7F9B8F);
+    }
+
+    &--primary-brown {
+      @include primary-button-color(#A29281);
+    }
+
+    &--secondary-brown {
+      @include secondary-button-color(#A29281);
+    }
+
+    &--primary-red {
+      @include primary-button-color(#5D2A2C);
+    }
+
+    &--secondary-red {
+      @include secondary-button-color(#5D2A2C);
     }
   }
 }
