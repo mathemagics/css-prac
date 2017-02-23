@@ -27,10 +27,16 @@ $bg-color: #fff;
     margin: 0;
   }
 
+  &__icon {
+    color: #fff;
+    font-size: 1.5em;
+    transition: all 0.5s;
+  }
+
   &__link {
     font-size: 0.7em;
     text-decoration: none;
-    color: $black;
+    color: #fff;
     margin: 0px 10px;
     transition: all 0.5s;
 
