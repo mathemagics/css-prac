@@ -58,6 +58,10 @@
     height: 52px;
     text-transform: uppercase;
 
+    &:focus {
+      outline: 0;
+    }
+
     &--primary-blue {
       @include primary-button-color(#003e51);
     }

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 // import { connect } from 'react-redux';
 
 import './styles.scss';
-import JumbotronImage from '../jumbotronImage';
 import image1 from '../../assets/images/jumbotron1.jpg';
 import image2 from '../../assets/images/jumbotron2.jpg';
 import image3 from '../../assets/images/jumbotron3.jpg';
@@ -31,7 +30,7 @@ class Jumbotron extends Component {
   render() {
     return (
       <div className="jumbotron">
-        <JumbotronImage imageUrl={this.state.currentImage} />
+        <img src={this.state.currentImage} className="jumbotron__image" />
       </div>
     );
   }

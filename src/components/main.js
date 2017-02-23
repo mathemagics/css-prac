@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Product from './product';
+import Product from './products';
 import Jumbotron from './jumbotron';
 
 export default () => {

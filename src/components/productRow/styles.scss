@@ -1,0 +1,13 @@
+.product-row {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0px 0px 160px 0px;
+  padding: 40px 7vw;
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
