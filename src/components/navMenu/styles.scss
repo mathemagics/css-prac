@@ -1,0 +1,59 @@
+.nav-menu {
+  width: 100vw;
+  background-color: #333;
+  font-family: "Montserrat";
+  font-size: 0.8em;
+  color: #666;
+
+  &__list {
+    list-style: none;
+    padding: 0px 4vw;
+  }
+
+  &__li {
+    padding: 30px 20px;
+    border-bottom: 1px solid #666;
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__email-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1.4em;
+    align-items: center;
+    width: 80vw;
+    height: 45px;
+    padding: 0px 20px;
+    background-color: #666;
+  }
+
+  &__email {
+    width: 60vw;
+    border: 0px;
+    background-color: #666;
+    color: #fff;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__arrow {
+    transform:scale(2,1);
+  }
+
+  &__social-media {
+    width: 10vw;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+  }
+}
