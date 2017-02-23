@@ -1,10 +1,4 @@
-.product {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin: 0px 0px 160px 0px;
-  padding: 40px 130px;
-
+.products {
   &__primary-image {
     width: 42vw;
     height: 410px;
@@ -14,12 +8,15 @@
   }
 
   &__secondary-image {
+    position: absolute;
     z-index: 1;
     margin: auto;
-    position: absolute;
     margin-top: 50px;
     width: 144.28px;
     height: 443px;
   }
-
+  // 
+  // &:nth-child(odd) {
+  //   flex-direction: row-reverse;
+  // }
 }
