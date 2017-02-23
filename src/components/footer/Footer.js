@@ -9,11 +9,11 @@ class Footer extends Component {
       <div className="footer">
         <div className="footer__section">
           <div className="footer__links">
-            <Link to="/contact">Contact</Link>
-            <Link to="/faq">FAQ</Link>
-            <Link to="/privacy">Privacy Policy</Link>
-            <Link to="/media">Media Kit</Link>
-            <Link to="/terms">Terms of Use</Link>
+            <Link className="footer__link" to="/contact">Contact</Link>
+            <Link className="footer__link" to="/faq">FAQ</Link>
+            <Link className="footer__link" to="/privacy">Privacy Policy</Link>
+            <Link className="footer__link" to="/media">Media Kit</Link>
+            <Link className="footer__link" to="/terms">Terms of Use</Link>
           </div>
           <div className="footer__copyright">
             ©2015 AbbottNYC
