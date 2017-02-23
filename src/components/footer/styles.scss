@@ -1,0 +1,17 @@
+
+.footer {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  height: 400px;
+  background-color: #222;
+  color: #fff;
+
+  &__section {
+
+  }
+
+
+}
