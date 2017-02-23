@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { connect } from 'react-redux';
+import { Link } from 'react-router';
 
 import './styles.scss';
 import image1 from '../../assets/images/jumbotron1.jpg';
@@ -30,6 +30,8 @@ class Jumbotron extends Component {
   render() {
     return (
       <div className="jumbotron">
+        <h1 className="jumbotron__header">Scents for an Inspired Life</h1>
+        <Link to="/shop" className="jumbotron__link">SHOP NOW</Link>
         <img src={this.state.currentImage} className="jumbotron__image" />
       </div>
     );
