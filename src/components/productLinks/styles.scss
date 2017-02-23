@@ -6,6 +6,7 @@
   text-transform: uppercase;
   color: #000;
   margin-left: 0px;
+  margin-right: 14%;
 
   &__text {
     text-align: left;
@@ -31,12 +32,24 @@
       background-color: #003e51;
       border: 1px solid #003e51;
       color: #FFFFFF;
+
+      &:hover {
+        background-color: #333333;
+        border: 1px solid #333333;
+        transition: ease-in-out .2s;
+      }
     }
 
     &--white {
       background-color: #FFFFFF;
       border: 1px solid #003e51;
       color: #003e51;
+
+      &:hover {
+        border: 1px solid #333333;
+        color: #333333;
+        transition: ease-in-out .2s;
+      }
     }
   }
 }
