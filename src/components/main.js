@@ -5,7 +5,7 @@ import Jumbotron from './jumbotron';
 
 export default () => {
   return (
-    <div id="main">Mainpage
+    <div id="main">
       <Jumbotron />
       <Product />
     </div>
