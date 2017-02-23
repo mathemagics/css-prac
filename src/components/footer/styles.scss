@@ -20,6 +20,22 @@
 
   }
 
+  &__newsletter {
+    width: 35vw;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid;
+    padding: 10px;
+    border-color: #666;
+    background-color: #222;
+    color: #666;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
   &__links {
     display: flex;
     flex-flow: row wrap;

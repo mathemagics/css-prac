@@ -20,10 +20,15 @@ class Footer extends Component {
           </div>
         </div>
         <div className="footer__section">
-          <input />
+          <input
+            className="footer__newsletter"
+            placeholder="Sign up for our newsletter"
+          />
           <div className="footer__row">
             <div className="footer__socialMedia">
-              <i className="icon-camera-retro" /> camera
+              <i className="icon-linkedin-sign" />
+              <i className="icon-facebook-sign" />
+              <i className="icon-instagram" />
             </div>
             <div className="footer__author">
               Site by <Link to="alchemist">Alchemist</Link>
