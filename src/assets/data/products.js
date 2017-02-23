@@ -1,0 +1,28 @@
+const products = [
+  { name: 'THE CAPE',
+    coords: '41.6787° N , 70.4789° W',
+    description: 'MINT - GINGER - MOSS',
+    color: 'blue',
+    primaryImageURL: '../../assets/images/test.jpg',
+    secondaryImageURL: '../../assets/images/test2.jpg' },
+  // { name: 'Sequoia',
+  //   coords: 'coords',
+  //   description: 'description',
+  //   color: 'color',
+  //   primaryImageURL: 'primaryImageURL',
+  //   secondaryImageURL: 'secondaryImageURL' },
+  // { name: 'Mojave',
+  //   coords: 'coords',
+  //   description: 'description',
+  //   color: 'color',
+  //   primaryImageURL: 'primaryImageURL',
+  //   secondaryImageURL: 'secondaryImageURL' },
+  // { name: 'Telluride',
+  //   coords: 'coords',
+  //   description: 'description',
+  //   color: 'color',
+  //   primaryImageURL: 'primaryImageURL',
+  //   secondaryImageURL: 'secondaryImageURL' },
+];
+
+export default products;
