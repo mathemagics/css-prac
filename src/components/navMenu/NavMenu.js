@@ -28,20 +28,28 @@ class NavMenu extends Component {
             </div>
           </li>
           <li className="nav-menu__li">
-            <Link className="nav-menu__link" to="/contact">Contact</Link>
-            <Link className="nav-menu__link" to="/faq">FAQ</Link>
-            <Link className="nav-menu__link" to="/privacy">Privacy Policy</Link>
-            <Link className="nav-menu__link" to="/media">Media Kit</Link>
-            <Link className="nav-menu__link" to="/terms">Terms of Use</Link>
+            <div className="nav-menu__sublink-row">
+              <div className="nav-menu__sublink-column">
+                <Link className="nav-menu__sublink" to="/contact">Contact</Link>
+                <Link className="nav-menu__sublink" to="/faq">FAQ</Link>
+                <Link className="nav-menu__sublink" to="/privacy">Privacy Policy</Link>
+              </div>
+              <div className="nav-menu__sublink-column">
+                <Link className="nav-menu__sublink" to="/media">Media Kit</Link>
+                <Link className="nav-menu__sublink" to="/terms">Terms of Use</Link>
+              </div>
+            </div>
           </li>
           <li className="nav-menu__li">
             <div>
-              <div>Customer Support</div>
-              <div><a>contact@alchemist.com</a></div>
+              <div className="nav-menu__customer-support">Customer Support</div>
+              <div><Link to="/" className="nav-menu__contact">contact@alchemist.com</Link></div>
             </div>
-            <div>
+            <div className="nav-menu__copyright">
               <div>@AbbottNYC 2016</div>
-              <div>Site by <a>Alchemist</a></div>
+              <div>
+                Site by <Link to="/" className="nav-menu__contact">Alchemist</Link>
+              </div>
             </div>
           </li>
         </ul>

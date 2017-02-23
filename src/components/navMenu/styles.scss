@@ -1,9 +1,14 @@
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url('../../assets/fonts/Montserrat-ExtraLight.ttf') format("truetype");
+}
+
 .nav-menu {
   width: 100vw;
   background-color: #333;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Light";
   font-size: 0.8em;
-  color: #666;
+  color: #777;
 
   &__list {
     list-style: none;
@@ -12,13 +17,32 @@
 
   &__li {
     padding: 30px 20px;
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid #777;
   }
 
   &__link {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+  }
+
+  &__sublink-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__sublink-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__sublink {
+    padding: 10px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+
   }
 
   &__email-box {
@@ -55,5 +79,18 @@
     display: flex;
     justify-content: space-between;
     font-size: 1.3em;
+  }
+
+  &__customer-support {
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+  }
+  &__contact {
+    color: #fff;
+  }
+  &__copyright {
+    line-height: 2em;
+    padding-top: 20px;
   }
 }
