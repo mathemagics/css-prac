@@ -25,13 +25,16 @@ class Footer extends Component {
             placeholder="Sign up for our newsletter"
           />
           <div className="footer__row">
-            <div className="footer__socialMedia">
+            <div className="footer__social-media">
               <i className="icon-linkedin-sign" />
               <i className="icon-facebook-sign" />
               <i className="icon-instagram" />
             </div>
             <div className="footer__author">
-              Site by <Link to="alchemist">Alchemist</Link>
+              Site by
+              <Link to="alchemist" className="footer__link">
+                Alchemist
+              </Link>
             </div>
           </div>
         </div>
