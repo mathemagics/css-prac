@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url('../../assets/fonts/Montserrat-Regular.ttf') format("truetype");
+}
+
+.header {
+  background-color: "white";
+  color: black;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    color: black;
+    padding: 0px 10px;
+  }
+}
