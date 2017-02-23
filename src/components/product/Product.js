@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 // import { connect } from 'react-redux';
 
 import './styles.scss';
-import image from '../../../assets/test.jpg';
-import image2 from '../../../assets/test2.png';
+import image from '../../assets/images/test.jpg';
+import image2 from '../../assets/images/test2.png';
 import ProductLinks from '../productLinks';
 
 class Product extends Component {
