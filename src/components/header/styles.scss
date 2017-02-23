@@ -11,14 +11,16 @@ $bg-color: #fff;
   position: fixed;
   padding: 20px 20px;
   width: 100vw;
+  z-index: 2;
   box-sizing: border-box;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  background-color: $bg-color;
+  background-color: rgba(0,0,0,0);
   color: $black;
   text-transform: uppercase;
+  transition: all 1s;
 
   &__link-list {
     padding: 0;

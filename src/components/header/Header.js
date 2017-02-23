@@ -12,7 +12,9 @@ class Header extends Component {
   handleScroll() {
     if (this.header !== null) {
       if (window.scrollY > 30) {
-        this.header.style.backgroundColor = 'red';
+        this.header.style.backgroundColor = '#fff';
+      } else {
+        this.header.style.backgroundColor = 'rgba(0,0,0,0)';
       }
     }
   }
