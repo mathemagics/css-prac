@@ -25,11 +25,19 @@
 .product-links {
   display: flex;
   justify-content: center;
-  flex-flow: column wrap;
   align-items: center;
+  flex-flow: column wrap;
   text-transform: uppercase;
   color: #000;
   flex: 1;
+
+  &__aligner {
+      padding: 0px;
+      display: flex;
+      justify-content: flex-start;
+      flex-flow: column wrap;
+      max-width: 340px;
+  }
 
   &__text {
     text-align: left;

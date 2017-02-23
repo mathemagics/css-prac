@@ -1,9 +1,9 @@
 .product {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  margin: 160px 0px;
-  padding: 0px 130px;
+  justify-content: center;
+  margin: 0px 0px 160px 0px;
+  padding: 40px 130px;
 
   &__primary-image {
     width: 42vw;
