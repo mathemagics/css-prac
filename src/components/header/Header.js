@@ -11,10 +11,17 @@ class Header extends Component {
   }
   handleScroll() {
     if (this.header !== null) {
-      if (window.scrollY > 30) {
+      const links = document.getElementsByClassName('header__link');
+      if (window.scrollY > 20) {
         this.header.style.backgroundColor = '#fff';
+        for (let x = 0; x < links.length; x += 1) {
+          links[x].style.color = '#000';
+        }
       } else {
         this.header.style.backgroundColor = 'rgba(0,0,0,0)';
+        for (let x = 0; x < links.length; x += 1) {
+          links[x].style.color = '#fff';
+        }
       }
     }
   }
