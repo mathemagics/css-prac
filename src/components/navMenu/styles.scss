@@ -7,10 +7,15 @@
 
   width: 100vw;
   background-color: #333;
-  padding-top: 12vh;
+  padding-top: 10vh;
+  min-height: 90vh;
   font-family: "Montserrat-Light";
   font-size: 0.8em;
   color: #777;
+
+  @media(max-device-width: 649px) {
+    font-size: 2.0em;
+  }
 
   &__list {
     list-style: none;
@@ -20,6 +25,10 @@
   &__li {
     padding: 30px 20px;
     border-bottom: 1px solid #777;
+
+    @media(max-device-width: 649px) {
+        padding: 3vh;
+      }
   }
 
   &__link {
@@ -55,9 +64,14 @@
     font-size: 1.4em;
     align-items: center;
     width: 80vw;
-    height: 45px;
+    height: 6vh;
     padding: 0px 20px;
     background-color: #666;
+
+    @media(max-device-width: 649px) {
+      width: 70vw;
+      padding: 0px 5vw;
+      }
   }
 
   &__email {
@@ -69,6 +83,11 @@
     &:focus {
       outline: none;
     }
+
+    @media(max-device-width: 649px) {
+        width: 50vw;
+        font-size: 1.4em;
+      }
   }
 
   &__arrow {
@@ -81,6 +100,10 @@
     display: flex;
     justify-content: space-between;
     font-size: 1.3em;
+    @media(max-device-width: 649px) {
+      width: 30vw;
+        font-size: 2em;
+      }
   }
 
   &__customer-support {
