@@ -13,10 +13,6 @@
   font-size: 0.8em;
   color: #777;
 
-  @media(max-width: 649px) {
-    font-size: 2.0em;
-  }
-
   &__list {
     list-style: none;
     padding: 0px 4vw;
@@ -102,8 +98,8 @@
     font-size: 1.3em;
     @media(max-width: 649px) {
       width: 30vw;
-        font-size: 2em;
-      }
+      font-size: 2.5em;
+    }
   }
 
   &__customer-support {
