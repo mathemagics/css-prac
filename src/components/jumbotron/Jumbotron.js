@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { Link } from 'react-router';
 
 import './styles.scss';
@@ -29,11 +30,18 @@ class Jumbotron extends Component {
 
   render() {
     return (
-      <div className="jumbotron">
-        <h1 className="jumbotron__header">Scents for an Inspired Life</h1>
-        <Link to="/shop" className="jumbotron__link">SHOP NOW</Link>
-        <img src={this.state.currentImage} className="jumbotron__image" />
-      </div>
+      <ReactCSSTransitionGroup
+        transitionName="fadein"
+        transitionAppear
+        transitionEnterTimeout={400}
+        transitionLeaveTimeout={400}
+      >
+        <div className="jumbotron">
+          <h1 className="jumbotron__header">Scents for an Inspired Life</h1>
+          <Link to="/shop" className="jumbotron__link">SHOP NOW</Link>
+          <img src={this.state.currentImage} className="jumbotron__image" />
+        </div>
+      </ReactCSSTransitionGroup>
     );
   }
 }

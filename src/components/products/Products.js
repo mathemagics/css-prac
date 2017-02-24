@@ -11,6 +11,9 @@ import brown2 from '../../assets/images/brown2.png';
 import red1 from '../../assets/images/red.jpg';
 import red2 from '../../assets/images/red2.png';
 
+// Products are hard-coded in, as we felt it wasn't paticularly important
+// to create a back-end of any sort for the purposes of this project.
+
 export default() => {
   return (
     <div className="products">

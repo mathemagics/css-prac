@@ -7,7 +7,7 @@
   margin: 0px 0px 160px 0px;
   padding: 40px 7vw;
 
-  &:nth-child(odd) {
+  &:nth-child(even) {
     flex-direction: row-reverse;
   }
 }
