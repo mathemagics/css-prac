@@ -9,6 +9,8 @@
   align-items: center;
   flex-wrap: no-wrap;
   text-align: center;
+  transition: opacity .7s;
+  position: absolute;
 
   &__image {
     width: 100%;
@@ -46,21 +48,51 @@
   transition: opacity .5s ease-in;
 }
 
-@media (max-width: 649px) {
-  .jumbotron {
+@media(max-device-width: 649px) {
+  height: 70vh;
+
+  &__image {
     height: 70vh;
-    &__image {
-      height: 70vh;
-      object-position: center;
-      object-fit: cover;
+    object-position: center;
+    object-fit: cover;
+  }
+  &__header {
+    font-size: 4em;
+    font-weight: lighter;
+  }
+  &__link {
+    margin-top: 7vh;
+    font-size: 3em;
+  }
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  margin: 10px;
+  position: absolute;
+  transition: opacity 1s;
+  width: 150px;
+
+  &-enter {
+    opacity: 0;
+
+    &-active {
+      opacity: 1;
     }
-    &__header {
-      font-weight: lighter;
-      font-size: 1.5em;
+  }
+
+  &-leave {
+    opacity: 1;
+
+    &-active {
+      opacity: 0;
     }
-    &__link {
-      margin-top: 7vh;
-      font-size: 1em;
-    }
+  }
+
+  &__container {
+    position: relative;
   }
 }
