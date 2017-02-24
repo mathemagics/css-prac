@@ -11,3 +11,16 @@
     flex-direction: row-reverse;
   }
 }
+
+@media(max-width: 649px) {
+  .product-row {
+    margin: 0px;
+    padding: 20px;
+
+    &:first-child {
+      padding-top: 20px;
+    }
+  }
+
+
+}

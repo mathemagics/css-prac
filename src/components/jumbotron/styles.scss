@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url('../../assets/fonts/PlayfairDisplay-Regular.ttf') format("truetype");
+}
+
 .jumbotron {
   display: flex;
   justify-content: center;
@@ -16,7 +21,7 @@
     color: white;
     position: absolute;
     z-index: 1;
-    font-family: serif;
+    font-family: "PlayfairDisplay";
     font-size: 3em;
     font-weight: lighter;
   }
@@ -39,4 +44,22 @@
 .fadein-appear.fadein-appear-active {
   opacity: 1;
   transition: opacity .5s ease-in;
+}
+
+@media(max-width: 649px) {
+  .jumbotron {
+    &__image {
+      width: auto;
+      height: 470px;
+      object-position: center;
+      object-fit: cover;
+    }
+    &__header {
+      font-size: 2em;
+      font-weight: lighter;
+    }
+    &__link {
+      margin-top: 60px;
+    }
+  }
 }
