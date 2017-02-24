@@ -48,26 +48,26 @@ class Header extends Component {
   render() {
     return (
       <div className="header" ref={(header) => { this.header = header; }}>
-        <MediaQuery query="(min-width: 650px)">
+        <MediaQuery query="(min-device-width: 650px)">
           <ul className="header__link-list">
             <Link className="header__link" to="/shop">Shop</Link>
             <Link className="header__link" to="/adventures">Adventures</Link>
             <Link className="header__link" to="/about">About</Link>
           </ul>
         </MediaQuery>
-        <MediaQuery query="(max-width: 649px)">
+        <MediaQuery query="(max-device-width: 649px)">
           <a href="/" onClick={this.openMenu} className="header__icon-link">
             <i className="icon-reorder header__icon" />
           </a>
         </MediaQuery>
         <Link className="header__link header__link--title" to="/">Abbott</Link>
-        <MediaQuery query="(min-width: 650px)">
+        <MediaQuery query="(min-device-width: 650px)">
           <ul className="header__link-list">
             <Link className="header__link" to="signup">join</Link>
             <Link className="header__link" to="signin">Login</Link>
           </ul>
         </MediaQuery>
-        <MediaQuery query="(max-width: 649px)">
+        <MediaQuery query="(max-device-width: 649px)">
           <i className="icon-shopping-cart header__icon" />
         </MediaQuery>
       </div>

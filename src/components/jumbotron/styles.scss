@@ -48,20 +48,21 @@
   transition: opacity .5s ease-in;
 }
 
-@media(max-width: 649px) {
+@media(max-device-width: 649px) {
   .jumbotron {
+    height: 70vh;
     &__image {
-      width: auto;
-      height: 470px;
+      height: 70vh;
       object-position: center;
       object-fit: cover;
     }
     &__header {
-      font-size: 2em;
+      font-size: 4em;
       font-weight: lighter;
     }
     &__link {
-      margin-top: 60px;
+      margin-top: 7vh;
+      font-size: 3em;
     }
   }
 }
