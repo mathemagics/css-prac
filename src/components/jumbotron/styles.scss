@@ -49,21 +49,20 @@
 }
 
 @media(max-device-width: 649px) {
-  .jumbotron {
+  height: 70vh;
+
+  &__image {
     height: 70vh;
-    &__image {
-      height: 70vh;
-      object-position: center;
-      object-fit: cover;
-    }
-    &__header {
-      font-size: 4em;
-      font-weight: lighter;
-    }
-    &__link {
-      margin-top: 7vh;
-      font-size: 3em;
-    }
+    object-position: center;
+    object-fit: cover;
+  }
+  &__header {
+    font-size: 4em;
+    font-weight: lighter;
+  }
+  &__link {
+    margin-top: 7vh;
+    font-size: 3em;
   }
 }
 

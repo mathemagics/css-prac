@@ -94,10 +94,8 @@
       @include secondary-button-color(#5D2A2C);
     }
   }
-}
 
-@media(max-width: 649px) {
-  .product-links {
+  @media(max-width: 649px) {
     &__text {
       text-align: center;
       margin-top: 100px;
