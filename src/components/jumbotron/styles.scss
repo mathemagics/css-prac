@@ -9,6 +9,8 @@
   align-items: center;
   flex-wrap: no-wrap;
   text-align: center;
+  transition: opacity .7s;
+  position: absolute;
 
   &__image {
     width: 100%;
@@ -61,5 +63,36 @@
     &__link {
       margin-top: 60px;
     }
+  }
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  margin: 10px;
+  position: absolute;
+  transition: opacity 1s;
+  width: 150px;
+
+  &-enter {
+    opacity: 0;
+
+    &-active {
+      opacity: 1;
+    }
+  }
+
+  &-leave {
+    opacity: 1;
+
+    &-active {
+      opacity: 0;
+    }
+  }
+
+  &__container {
+    position: relative;
   }
 }

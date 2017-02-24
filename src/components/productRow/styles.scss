@@ -7,6 +7,10 @@
   margin: 0px 0px 160px 0px;
   padding: 40px 7vw;
 
+  &:first-child {
+    padding-top: 680px;
+  }
+
   &:nth-child(even) {
     flex-direction: row-reverse;
   }
