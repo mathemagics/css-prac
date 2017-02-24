@@ -1,5 +1,7 @@
 import { TOGGLE_MENU } from './types';
 
-export const toggleMenu = () => ({
-  type: TOGGLE_MENU,
-});
+export const toggleMenu = () => {
+  return {
+    type: TOGGLE_MENU,
+  };
+};

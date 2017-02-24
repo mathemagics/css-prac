@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import menu from './menuReducer';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => { return state; },
+  menu,
 });
 
 export default rootReducer;

@@ -41,6 +41,9 @@ $bg-color: #fff;
     font-size: 1.4em;
     transition: all 0.5s;
   }
+  &__icon-link {
+    text-decoration: none;
+  }
 
   &__link {
     font-size: 0.7em;

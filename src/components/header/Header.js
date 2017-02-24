@@ -56,7 +56,9 @@ class Header extends Component {
           </ul>
         </MediaQuery>
         <MediaQuery query="(max-width: 649px)">
-          <i className="icon-reorder header__icon" />
+          <a href="/" onClick={this.openMenu} className="header__icon-link">
+            <i className="icon-reorder header__icon" />
+          </a>
         </MediaQuery>
         <Link className="header__link header__link--title" to="/">Abbott</Link>
         <MediaQuery query="(min-width: 650px)">
@@ -66,9 +68,7 @@ class Header extends Component {
           </ul>
         </MediaQuery>
         <MediaQuery query="(max-width: 649px)">
-          <a href="/" onClick={this.openMenu}>
-            <i className="icon-shopping-cart header__icon" />
-          </a>
+          <i className="icon-shopping-cart header__icon" />
         </MediaQuery>
       </div>
     );
