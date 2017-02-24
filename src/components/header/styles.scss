@@ -27,7 +27,7 @@ $bg-color: #fff;
   transition: all 0.5s ease-in-out;
 
   @media(max-device-width: 649px) {
-    font-size: 2.0em;
+    font-size: 1.2em;
     height: 8vh;
   }
 
@@ -40,10 +40,6 @@ $bg-color: #fff;
     color: #fff;
     font-size: 1.4em;
     transition: all 0.5s;
-
-    @media(max-device-width: 649px) {
-      font-size: 2em;
-    }
   }
   &__icon-link {
     text-decoration: none;

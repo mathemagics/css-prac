@@ -46,7 +46,7 @@
   transition: opacity .5s ease-in;
 }
 
-@media(max-device-width: 649px) {
+@media (max-width: 649px) {
   .jumbotron {
     height: 70vh;
     &__image {
@@ -55,12 +55,12 @@
       object-fit: cover;
     }
     &__header {
-      font-size: 4em;
       font-weight: lighter;
+      font-size: 1.5em;
     }
     &__link {
       margin-top: 7vh;
-      font-size: 3em;
+      font-size: 1em;
     }
   }
 }
