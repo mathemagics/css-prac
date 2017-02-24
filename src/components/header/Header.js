@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import MediaQuery from 'react-responsive';
 
+import { toggleMenu } from '../../actions/';
 import './styles.scss';
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.openMenu = this.openMenu.bind(this);
+  }
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll.bind(this));
   }
@@ -34,6 +40,10 @@ class Header extends Component {
       }
     }
   }
+  openMenu(e) {
+    e.preventDefault();
+    this.props.toggleMenu();
+  }
 
   render() {
     return (
@@ -56,11 +66,13 @@ class Header extends Component {
           </ul>
         </MediaQuery>
         <MediaQuery query="(max-width: 649px)">
-          <i className="icon-shopping-cart header__icon" />
+          <a href="/" onClick={this.openMenu}>
+            <i className="icon-shopping-cart header__icon" />
+          </a>
         </MediaQuery>
       </div>
     );
   }
 }
 
-export default Header;
+export default connect(null, { toggleMenu })(Header);
