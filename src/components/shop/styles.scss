@@ -1,0 +1,16 @@
+.shop {
+  padding-top: 120px;
+  width: 100vw;
+  background-color: #e9ebeb;
+  
+  &__row {
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 8vh;
+    margin: auto;
+  }
+}
