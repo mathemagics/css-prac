@@ -14,12 +14,24 @@ class Shop extends Component {
     return (
       <div className="shop">
         <div className="shop__row">
-          <ShopItem img={blue} />
-          <ShopItem img={green} />
+          <ShopItem
+            img={blue} name="The Cape" price={65}
+            description="MINT - GINGER - MOSS"
+          />
+          <ShopItem
+            img={green} name="Sequoia" price={65}
+            description="SMOKEY INCENSE - CEDARWOOD - SANDALWOOD"
+          />
         </div>
         <div className="shop__row">
-          <ShopItem img={brown} />
-          <ShopItem img={red} />
+          <ShopItem
+            img={brown} name="Mojave" price={65}
+            description="BERGAMOT - BLACK PEPPER - TOBACCO LEAF"
+          />
+          <ShopItem
+            img={red} name="Teluride" price={65}
+            description="SUEDE - SANDALWOOD - TONKA BEAN"
+          />
         </div>
       </div>
     );

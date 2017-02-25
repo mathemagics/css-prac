@@ -8,7 +8,7 @@ export default () => {
   return (
     <Router history={browserHistory}>
       <Route path="/" component={App}>
-        <IndexRoute component={Main} />
+        <IndexRoute component={Shop} />
         <Route path="/shop" component={Shop} />
       </Route>
     </Router>

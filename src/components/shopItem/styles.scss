@@ -1,0 +1,32 @@
+.shop__item {
+  width: 45%;
+  background-color: #fff;
+
+  &__img {
+    padding: 20px;
+    display: block;
+    width: 30%;
+    height: auto;
+    margin: auto;
+  }
+
+  &__info {
+    background-color: #e9ebeb;
+    padding: 20px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9em;
+  }
+
+  &__name {
+    padding-right: 5%;
+  }
+
+  &__price {
+    font-family: "Montserrat-Light";
+  }
+
+  &__description {
+    padding-top: 10px;
+  }
+}
