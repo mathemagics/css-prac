@@ -9,8 +9,9 @@ export default () => {
   return (
     <Router history={browserHistory}>
       <Route path="/" component={App}>
-        <IndexRoute component={Adventures} />
+        <IndexRoute component={Main} />
         <Route path="/shop" component={Shop} />
+        <Route path="/adventures" component={Adventures} />
       </Route>
     </Router>
   );
