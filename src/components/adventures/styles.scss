@@ -1,3 +1,22 @@
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url('../../assets/fonts/PlayfairDisplay-Regular.ttf') format("truetype");
+}
+
 .adventures {
-  
+  text-align: center;
+  padding-top: 80px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+
+  &__title {
+    font-family: "PlayfairDisplay";
+    font-size: 1.9em;
+    padding: 30px;
+  }
+
+  &__img {
+    padding: 20px 0px;
+    width: 90vw;
+  }
 }

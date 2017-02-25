@@ -10,7 +10,7 @@ class Adventures extends Component {
   render() {
     return (
       <div className="adventures">
-        <h2>Explore the places that inspired our scents.</h2>
+        <div className="adventures__title">Explore the places that inspired our scents.</div>
         <img src={cape} alt="" className="adventures__img" />
         <img src={mojave} alt="" className="adventures__img" />
         <img src={sequoia} alt="" className="adventures__img" />
