@@ -10,9 +10,8 @@ export default (props) => {
     <div className="product-row">
       <LazyLoad throttle={200} height={300} scroll>
         <ReactCSSTransitionGroup
-          key="1"
           transitionName="fade"
-          transitionAppear={true}
+          transitionAppear
           transitionAppearTimeout={500}
           transitionEnter={false}
           transitionLeave={false}
@@ -20,13 +19,33 @@ export default (props) => {
           <img src={props.primaryImage} className="products__primary-image" />
         </ReactCSSTransitionGroup>
       </LazyLoad>
-      <img src={props.secondaryImage} className="products__secondary-image" />
-      <ProductLinks
-        name={props.name}
-        color={props.color}
-        coords={props.coords}
-        description={props.description}
-      />
+      <LazyLoad throttle={200} height={300} scroll>
+        <ReactCSSTransitionGroup
+          transitionName="fade"
+          transitionAppear
+          transitionAppearTimeout={500}
+          transitionEnter={false}
+          transitionLeave={false}
+        >
+          <img src={props.secondaryImage} className="products__secondary-image" />
+        </ReactCSSTransitionGroup>
+      </LazyLoad>
+      <LazyLoad throttle={200} height={300} scroll>
+        <ReactCSSTransitionGroup
+          transitionName="fade"
+          transitionAppear
+          transitionAppearTimeout={500}
+          transitionEnter={false}
+          transitionLeave={false}
+        >
+          <ProductLinks
+            name={props.name}
+            color={props.color}
+            coords={props.coords}
+            description={props.description}
+          />
+        </ReactCSSTransitionGroup>
+      </LazyLoad>
     </div>
   );
 };
