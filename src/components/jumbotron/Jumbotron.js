@@ -31,6 +31,7 @@ class Jumbotron extends Component {
       <ReactCSSTransitionGroup
         transitionName="fadein"
         transitionAppear
+        transitionAppearTimeout={400}
         transitionEnterTimeout={400}
         transitionLeaveTimeout={400}
       >

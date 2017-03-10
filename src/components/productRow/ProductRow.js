@@ -8,7 +8,7 @@ import './styles.scss';
 export default (props) => {
   return (
     <div className="product-row">
-      <LazyLoad throttle={200} height={300} scroll>
+      <LazyLoad throttle={200} height={410} width={722} scroll>
         <ReactCSSTransitionGroup
           transitionName="fade"
           transitionAppear
@@ -19,7 +19,7 @@ export default (props) => {
           <img src={props.primaryImage} className="products__primary-image" />
         </ReactCSSTransitionGroup>
       </LazyLoad>
-      <LazyLoad throttle={200} height={300} scroll>
+      <LazyLoad throttle={200} height={443} width={144} scroll>
         <ReactCSSTransitionGroup
           transitionName="fade"
           transitionAppear
@@ -30,7 +30,7 @@ export default (props) => {
           <img src={props.secondaryImage} className="products__secondary-image" />
         </ReactCSSTransitionGroup>
       </LazyLoad>
-      <LazyLoad throttle={200} height={300} scroll>
+      <LazyLoad throttle={200} height={410} width={722} scroll>
         <ReactCSSTransitionGroup
           transitionName="fade"
           transitionAppear
