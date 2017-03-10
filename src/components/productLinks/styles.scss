@@ -32,11 +32,11 @@
   flex: 1;
 
   &__aligner {
-      padding: 0px;
-      display: flex;
-      justify-content: flex-start;
-      flex-flow: column wrap;
-      max-width: 340px;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    max-width: 340px;
   }
 
   &__text {
@@ -53,7 +53,7 @@
   }
 
   &__button {
-    margin: 10px;
+    margin: 8px;
     width: 215px;
     height: 52px;
     text-transform: uppercase;

@@ -48,7 +48,7 @@
   transition: opacity .5s ease-in;
 }
 
-@media(max-device-width: 649px) {
+@media(max-width: 649px) {
   height: 70vh;
 
   &__image {
